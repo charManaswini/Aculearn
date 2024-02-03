@@ -1,0 +1,5 @@
+DB_USER = 'manu'
+DB_PASSWORD = 'R0I6hkqUDpEc6KCm6De3vw'
+DB_HOST = 'paper-orca-8106.8nk.cockroachlabs.cloud'
+DB_PORT = '26257'
+DB_NAME = 'defaultdb'

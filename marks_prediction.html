@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="initial-scale=1, width=device-width">
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='css/global.css') }}">
+</head>
+<body style="background: linear-gradient(to bottom, #c705e3, #ffffff);">
+    <form method="POST" style="text-align: center; margin-top: 100px;">
+        <label for="id_assessment">ID Assessment:</label>
+        <input type="text" id="id_assessment" name="id_assessment" required><br><br>
+
+        <label for="id_student">ID Student:</label>
+        <input type="text" id="id_student" name="id_student" required><br><br>
+
+        <label for="date_submitted">Date Submitted:</label>
+        <input type="text" id="date_submitted" name="date_submitted" required><br><br>
+
+        <label for="is_banked">Is Banked:</label>
+        <input type="text" id="is_banked" name="is_banked" required><br><br>
+
+        <button style="background-color: #c705e3; color: white; font-size: 20px; padding: 10px 20px;" type="submit">Predict</button>
+    </form>
+</body>
+</html>

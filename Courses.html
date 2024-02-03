@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="initial-scale=1, width=device-width" />
+    <link rel="stylesheet" type="text/css" href="{{ url_for('file:///D:/Aculearn/static/css/global-courses.css', filename='global-courses.css') }}">
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='css/global-courses.css') }}">
+
+    <link rel="stylesheet" href="file:///D:/Aculearn/static/css/global-courses.css" />
+    <link rel="stylesheet" href="./index.css" />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Itim:wght@400&display=swap"
+    />
+  </head>
+  <body>
+    <div class="courses">
+      <div class="below-are-courses">Below are Courses offered</div>
+      <a href="bbb.html" class="component">
+        <div class="rectangle"></div>
+        <div class="aaa">BBB</div>
+      </a>
+      <a href="ccc.html" class="component1">
+        <div class="rectangle"></div>
+        <div class="aaa">CCC</div>
+      </a>
+      <a href="ddd.html" class="component2">
+        <div class="rectangle"></div>
+        <div class="aaa">DDD</div>
+      </a>
+      <a href="eee.html" class="component3">
+        <div class="rectangle"></div>
+        <div class="aaa">EEE</div>
+      </a>
+      <a href="fff.html" class="component4">
+        <div class="rectangle"></div>
+        <div class="aaa">FFF</div>
+      </a>
+      <a href="ggg.html" class="component5">
+        <div class="rectangle"></div>
+        <div class="aaa">GGG</div>
+      </a>
+      <img src="{{ url_for('static', filename='images/learningrafiki-1@2x.png') }}" alt="Image">
+      <img src="{{ url_for('static', filename='images/questionsrafiki-1@2x.png') }}" alt="Image">
+
+      <a href="aaa.html" class="component6">
+        <div class="rectangle"></div>
+        <div class="aaa">AAA</div>
+      </a>
+    </div>
+  </body>
+<style>
+.below-are-courses {
+  position: absolute;
+  top: 64px;
+  left: 380px;
+  font-size: 55px;
+  color: #000;
+  text-align: left;
+  display: inline-block;
+  width: 680px;
+  height: 124px;
+}
+.aaa,
+.rectangle {
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  top: 0;
+  left: 0;
+}
+.rectangle {
+  right: 0;
+  bottom: 0;
+  border-radius: var(--br-3xs);
+  background-color: var(--color-mediumorchid);
+}
+.aaa {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-shadow: 1px 0 0#000, 0 1px 0#000, -1px 0 0#000, 0-1px 0#000;
+}
+.component,
+.component1,
+.component2,
+.component3,
+.component4,
+.component5 {
+  position: absolute;
+  top: 314px;
+  left: 585px;
+  box-shadow: 0 4px 4px rgba(0, 0, 0, 0.25);
+  width: 233px;
+  height: 54px;
+}
+.component1,
+.component2,
+.component3,
+.component4,
+.component5 {
+  top: 421px;
+}
+.component2,
+.component3,
+.component4,
+.component5 {
+  top: 528px;
+}
+.component3,
+.component4,
+.component5 {
+  top: 635px;
+}
+.component4,
+.component5 {
+  top: 729px;
+}
+.component5 {
+  top: 836px;
+}
+.learning-rafiki-1-icon,
+.questions-rafiki-1-icon {
+  position: absolute;
+  top: 60px;
+  left: 887px;
+  width: 884px;
+  height: 993px;
+  object-fit: cover;
+}
+.questions-rafiki-1-icon {
+  top: 116px;
+  left: -169px;
+  width: 754px;
+  height: 900px;
+}
+.component6 {
+  position: absolute;
+  top: 224px;
+  left: 585px;
+  box-shadow: 0 4px 4px rgba(0, 0, 0, 0.25);
+  width: 233px;
+  height: 54px;
+}
+.courses {
+  position: relative;
+  background-color: var(--color-white);
+  width: 100%;
+  height: 1024px;
+  overflow: hidden;
+  text-align: center;
+  font-size: var(--font-size-11xl);
+  color: var(--color-white);
+  font-family: var(--font-itim);
+}
+
+</style>
+</html>

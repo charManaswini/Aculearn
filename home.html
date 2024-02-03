@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="initial-scale=1, width=device-width" />
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='css/global-home.css') }}">
+
+    <link rel="stylesheet" href="file:///D:/Aculearn/static/css/global-home.css" />
+    <link rel="stylesheet" href="./index.css" />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Itim:wght@400&display=swap"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400&display=swap"
+    />
+  </head>
+  <body>
+    <div class="home">
+      <img
+        class="college-class-amico-1"
+        alt=""
+        src="college-classamico-1@2x.png"
+      />
+
+      <div class="a-place-where-container">
+        <p class="a-place-where">
+          A Place where you can choose what is better for you!
+        </p>
+        <p class="a-place-where">&nbsp;</p>
+        <p class="a-place-where">
+          Predicting the scores, and percentages even before taking the course!
+        </p>
+      </div>
+      <div class="home-back" id="homeBackContainer">
+        <div class="rectangle"></div>
+        <div class="go-back-to">Go Back to Home</div>
+      </div>
+      <div class="feedback" id="feedbackContainer">
+        <div class="rectangle1"></div>
+        <div class="give-feedback"></div>
+        <div class="give-feedback1">Give Feedback!</div>
+      </div>
+    </div>
+
+    <script>
+      var homeBackContainer = document.getElementById("homeBackContainer");
+      if (homeBackContainer) {
+        homeBackContainer.addEventListener("click", function (e) {
+          // Please sync "Main" to the project
+        });
+      }
+      
+      var feedbackContainer = document.getElementById("feedbackContainer");
+      if (feedbackContainer) {
+        feedbackContainer.addEventListener("click", function (e) {
+          // Please sync "feedback" to the project
+        });
+      }
+      </script>
+  <style>
+    .college-class-amico-1 {
+  position: absolute;
+  top: -46px;
+  left: 512px;
+  width: 1009px;
+  height: 1100px;
+  object-fit: cover;
+}
+.a-place-where {
+  margin: 0;
+}
+.a-place-where-container {
+  position: absolute;
+  top: 93px;
+  left: 58px;
+  display: inline-block;
+  width: 454px;
+  height: 693px;
+  text-shadow: 0 4px 4px rgba(0, 0, 0, 0.25);
+}
+.rectangle {
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  border-radius: 4px;
+  background-color: var(--color-orchid);
+}
+.go-back-to {
+  position: absolute;
+  top: 10px;
+  left: 11px;
+  display: inline-block;
+  width: 237px;
+  height: 54px;
+}
+.home-back {
+  position: absolute;
+  top: 704px;
+  left: 122px;
+  box-shadow: 0 4px 4px rgba(0, 0, 0, 0.25) inset;
+  width: 259px;
+  height: 56px;
+  cursor: pointer;
+  font-size: var(--font-size-11xl);
+}
+.give-feedback,
+.rectangle1 {
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  top: 0;
+  left: 0;
+}
+.rectangle1 {
+  right: 0;
+  bottom: 0;
+  background-color: var(--color-orchid);
+}
+.give-feedback {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.give-feedback1 {
+  position: absolute;
+  top: 8px;
+  left: 32px;
+  font-size: var(--font-size-11xl);
+  font-family: var(--font-itim);
+  color: var(--color-black);
+  text-align: left;
+  display: inline-block;
+  width: 210px;
+  height: 47px;
+}
+.feedback {
+  position: absolute;
+  top: 829px;
+  left: calc(50% - 598px);
+  box-shadow: 0 4px 4px rgba(0, 0, 0, 0.25) inset;
+  width: 259px;
+  height: 48px;
+  cursor: pointer;
+  text-align: center;
+  font-size: 12px;
+  color: #363636;
+  font-family: var(--font-inter);
+}
+.home {
+  position: relative;
+  background-color: #fff;
+  width: 100%;
+  height: 1024px;
+  overflow: hidden;
+  text-align: left;
+  font-size: 50px;
+  color: var(--color-black);
+  font-family: var(--font-itim);
+}
+
+  </style>
+  </body>
+</html>

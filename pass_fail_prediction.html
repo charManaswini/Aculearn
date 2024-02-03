@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="initial-scale=1, width=device-width">
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='css/global.css') }}">
+</head>
+<body style="background: linear-gradient(to bottom, #c705e3, #ffffff);">
+    <form method="POST" style="text-align: center; margin-top: 100px;">
+        <label for="code_module">Code Module:</label>
+        <input type="text" id="code_module" name="code_module" required><br><br>
+
+        <label for="highest_education">Highest Education:</label>
+        <input type="text" id="highest_education" name="highest_education" required><br><br>
+
+        <label for="num_of_prev_attempts">Number of Previous Attempts:</label>
+        <input type="text" id="num_of_prev_attempts" name="num_of_prev_attempts" required><br><br>
+
+        <button style="background-color: #c705e3; color: white; font-size: 20px; padding: 10px 20px;" type="submit">Predict</button>
+    </form>
+</body>
+</html>

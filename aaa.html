@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="initial-scale=1, width=device-width">
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='css/global.css') }}">
+</head>
+<body style="background: linear-gradient(to bottom, #c705e3, #ffffff);">
+    <div style="text-align: center; margin-top: 100px;">
+        <a href="{{ url_for('pass_fail_prediction') }}">
+            <button style="background-color: #c705e3; color: white; font-size: 20px; padding: 10px 20px; margin-right: 20px;">
+                Pass/Fail Prediction
+            </button>
+        </a>
+        <a href="{{ url_for('marks_prediction') }}">
+            <button style="background-color: #c705e3; color: white; font-size: 20px; padding: 10px 20px;">
+                Marks/Score Prediction
+            </button>
+        </a>
+    </div>
+</body>
+</html>

@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="initial-scale=1, width=device-width" />
+  <link rel="stylesheet" href="file:///D:/Aculearn/static/css/global-signup.css" />
+  <link rel="stylesheet" href="file:///D:/Aculearn/static/css/index-signup.css" />
+  <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='css/global-signup.css') }}">
+  <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='css/index-signup.css') }}">
+  <link
+    rel="stylesheet"
+    href="https://fonts.googleapis.com/css2?family=Itim:wght@400&display=swap"
+  />
+</head>
+<body>
+  <div class="aculearn"><width=500px,height=500px> AcuLearn </div>
+  <div class="signup-container">
+    <div class="signup">
+      <form id="signup-form" action="/signup" method="post">
+          <input type="text" id="username" name="username" placeholder="Username" required>
+          <input type="password" id="password" name="password" placeholder="Password" required>
+          <input type="email" id="email" name="email" placeholder="Email" required>
+          <input type="submit" value="Sign Up">
+      </form>
+    </div>
+    <div class="login-rafiki-1-icon">
+    <img src="{{ url_for('static', filename='images/loginrafiki-1@2x.png') }}" alt="Image">
+      </div>
+  </div>
+</body>
+<style>
+  
+.signup-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 50px; /* Adjust as necessary */
+}
+
+.signup {
+  flex: 1;
+  margin-right: 20px; /* Adjust as necessary */
+}
+
+.login-rafiki-1-icon {
+  flex: 1;
+  width: 50%; /* Adjust the width as necessary */
+  height: 50%;
+  object-fit: cover;
+}
+
+form input[type="text"],
+form input[type="password"],
+form input[type="email"] {
+  font-size: 50px; /* Increased font-size */
+}
+
+/* Rest of your existing CSS */
+
+.aculearn {
+  position: absolute;
+  top: 50px;
+  left: 139px;
+  display: inline-block;
+  width: 5000px;
+  height: 5000px;
+  font-family: var(--font-itim);
+}
+form {
+  font-family: var(--font-itim);
+  font-size: 20px;
+  text-align: left;
+}
+
+input[type="text"],
+input[type="password"],
+input[type="email"],
+input[type="submit"] {
+  position: relative;
+  display: block;
+  margin-bottom: 15px;
+  width: 50%; /* Adjust the width as necessary */
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+input[type="submit"] {
+  position: relative;
+  background-color: #c92eda; /* Change button color as desired */
+  color: white;
+  border: none;
+  cursor: pointer;
+}
+
+input[type="submit"]:hover {
+  opacity: 0.8;
+}
+
+  </style>
+</html>

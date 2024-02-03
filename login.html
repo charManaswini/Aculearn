@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="initial-scale=1, width=device-width" />
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='css/global-loginsignup.css') }}">
+
+    <link rel="stylesheet" href="file:///D:/Aculearn/static/css/global-loginsignup.css" />
+    <link rel="stylesheet" href="./index.css" />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Itim:wght@400&display=swap"
+    />
+  </head>
+  <body>
+    <div class="loginsignup">
+      <img
+        class="mobile-login-rafiki-1"
+        alt=""
+        src="mobile-loginrafiki-1@2x.png"
+      />
+
+      <div class="aculearn">AcuLearn</div>
+      
+      <!-- Login Form -->
+      <form class="login-form" action="/login" method="POST">
+        <div class="form-group">
+          <label for="username">Username:</label>
+          <input type="text" id="username" name="username" required />
+        </div>
+        <div class="form-group">
+          <label for="password">Password:</label>
+          <input type="password" id="password" name="password" required />
+        </div>
+      </form>
+      
+      <div class="component" id="componentContainer1">
+        <div class="component1">
+          <div class="rectangle"></div>
+          <div class="aaa">Login</div>
+        </div>
+      </div>
+      <div class="component2" id="componentContainer2">
+        <div class="rectangle"></div>
+        <div class="aaa">Signup</div>
+      </div>
+      <div class="or">or</div>
+    </div>
+
+    <script>
+      var componentContainer1 = document.getElementById("componentContainer1");
+      if (componentContainer1) {
+        componentContainer1.addEventListener("click", function (e) {
+          // Please sync "Courses" to the project
+        });
+      }
+      
+      var componentContainer2 = document.getElementById("componentContainer2");
+      if (componentContainer2) {
+        componentContainer2.addEventListener("click", function (e) {
+          // Please sync "signup" to the project
+        });
+      }
+    </script>
+  </body>
+</html>
+
+<style>
+  .mobile-login-rafiki-1 {
+  position: absolute;
+  top: -71px;
+  left: 0;
+  width: 799px;
+  height: 1125px;
+  object-fit: cover;
+}
+.login-form {
+  position: absolute;
+  z-index: 1; /* Ensure the login form is above other components */
+  top: 300px; /* Adjust the top position as needed */
+  left: 1000px; /* Adjust the left position as needed */
+}
+.aculearn {
+  position: absolute;
+  top: 127px;
+  left: 1026px;
+  font-size: 55px;
+  text-align: left;
+  display: inline-block;
+  width: 356px;
+  height: 85px;
+}
+.rectangle {
+  right: 0;
+  bottom: 0;
+  border-radius: var(--br-3xs);
+  background-color: var(--color-mediumorchid);
+}
+.aaa,
+.component1,
+.rectangle {
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  top: 0;
+  left: 0;
+}
+.aaa {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-shadow: 1px 0 0#000, 0 1px 0#000, -1px 0 0#000, 0-1px 0#000;
+}
+
+.component1 {
+  right: 0;
+  bottom: 0;
+  box-shadow: 0 4px 4px rgba(0, 0, 0, 0.25);
+}
+.component {
+  top: 613px;
+  left: 1026px;
+  width: 233px;
+  height: 54px;
+  cursor: pointer;
+  color: var(--color-white);
+}
+.component,
+.component2,
+.or {
+  position: absolute;
+}
+.component2 {
+  top: 807px;
+  left: 1026px;
+  box-shadow: 0 4px 4px rgba(0, 0, 0, 0.25);
+  width: 233px;
+  height: 54px;
+  cursor: pointer;
+  color: var(--color-white);
+}
+
+.or {
+  top: 727px;
+  left: 1113px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 59px;
+  height: 20px;
+}
+.loginsignup {
+  position: relative;
+  background-color: var(--color-white);
+  width: 100%;
+  height: 1024px;
+  overflow: hidden;
+  text-align: center;
+  font-size: var(--font-size-11xl);
+  color: var(--color-black);
+  font-family: var(--font-itim);
+}
+
+</style>
+</html>

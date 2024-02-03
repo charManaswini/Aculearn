@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="initial-scale=1, width=device-width" />
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='css/global-Main.css') }}">
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Itim:wght@400&display=swap"
+    />
+    <style>
+      /* Add your styles here */
+
+      .learning-amico-1-1 {
+        position: absolute;
+        top: 100px;
+        right: 0;
+        width: 50%; /* Adjust the width as needed */
+        height: auto; /* Let the height adjust based on the image's aspect ratio */
+      }
+
+      .main {
+        position: relative;
+        background-color: #fff;
+        box-shadow: 0 4px 4px rgba(0, 0, 0, 0.25) inset;
+        width: 50%; /* Adjust the width as needed */
+        padding: 20px; /* Add padding for content */
+        font-size: 50px;
+        color: #000;
+        font-family: var(--font-itim);
+        box-sizing: border-box; /* Include padding and border in the width */
+      }
+
+      .welcome-to-aculearn {
+        margin: 0;
+      }
+
+      .welcome-to-aculearn-container {
+        display: inline-block;
+        width: 100%;
+        text-shadow: 0 4px 4px rgba(0, 0, 0, 0.25);
+      }
+
+      /* Add your other styles here */
+
+      .navbar {
+        background-color: #A020F0; /* Placeholder color, replace with your own */
+        display: flex;
+        justify-content: space-between;
+        padding: 10px;
+        color: white;
+      }
+
+      .nav-brand {
+        font-family: var(--font-itim);
+        font-weight: bold;
+        font-size: 50px;
+      }
+
+      .nav-items {
+        display: flex;
+        font-family: var(--font-itim);
+        font-size: 35px;
+      }
+
+      .nav-link {
+        text-decoration: none;
+        color: white;
+        padding: 10px;
+        margin-left: 10px;
+      }
+
+      .nav-link:hover {
+        background-color: #7f00f0; /* Darker purple for hover effect */
+      }
+    </style>
+  </head>
+  <body>
+    <nav class="navbar">
+      <div class="nav-brand">AcuLearn</div>
+      <div class="nav-items">
+          <a href="file:///D:/Aculearn/templates/home.html" class="nav-link">Home</a>
+          <a href="" class="nav-link">Courses</a>
+          <a href="file:///D:/Aculearn/loginsignup/loginsignup.html" class="nav-link">Profile</a>
+      </div>
+    </nav>
+    <div class="main">
+      <div class="welcome-to-aculearn-container">
+        <p class="welcome-to-aculearn">Welcome to AcuLearn!</p>
+        <p class="welcome-to-aculearn">&nbsp;</p>
+        <p class="welcome-to-aculearn">
+          A place where Machine Learning Meets Learning
+        </p>
+        <p class="welcome-to-aculearn">&nbsp;</p>
+        <p class="welcome-to-aculearn">
+          Make your daily learning tactics more precise using Data-Driven
+          decision making!
+        </p>
+      </div>
+    </div>
+    <img src="{{ url_for('static', filename='images/learningamico-1-1@2x.png') }}" alt="Image" class="learning-amico-1-1">
+  </body>
+</html>
