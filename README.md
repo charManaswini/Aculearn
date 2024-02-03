@@ -1,8 +1,5 @@
 <!DOCTYPE html>
 <html>
-<head>
-    <title>Aculearn Precision Learning Analytics</title>
-</head>
 <body>
     <h1>📘 Aculearn Precision Learning Analytics 📊</h1>
     <p>Welcome to the Aculearn Precision Learning Analytics project! 🚀</p>
